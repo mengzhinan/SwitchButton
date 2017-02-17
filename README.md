@@ -68,7 +68,7 @@ a simple slide layout library,just one java class file! 自定义控件，一个
                     ...
                 }
             });
-            //代码设置状态
+            代码设置状态
             myswitchbutton.setIsToggleOn(false);
         }
     }
