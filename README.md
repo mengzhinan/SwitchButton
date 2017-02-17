@@ -29,3 +29,49 @@ a simple slide layout library,just one java class file! 自定义控件，一个
         <!--是否打开-->
         <attr name="isToggleOn" format="boolean" />
     </declare-styleable>
+
+###layout.xml文件
+    <?xml version="1.0" encoding="utf-8"?>
+    <RelativeLayout
+        xmlns:dk="http://schemas.android.com/apk/res-auto"
+        ...>
+
+        <com.duke.switchbutton_test.SwitchButtonView
+            android:id="@+id/myswitchbutton"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            dk:isToggleOn="true" />
+    
+        <com.duke.switchbutton_test.SwitchButtonView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/myswitchbutton"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            dk:isToggleOn="true" />
+    </RelativeLayout>
+
+###actiivity.java代码：
+
+    public class MainActivity extends AppCompatActivity {
+        private SwitchButtonView myswitchbutton;
+    
+        @Override
+        protected void onCreate(Bundle savedInstanceState) {
+            super.onCreate(savedInstanceState);
+            setContentView(R.layout.activity_main);
+            myswitchbutton = (SwitchButtonView) findViewById(R.id.myswitchbutton);
+            myswitchbutton.setOnToggleChangeListener(new SwitchButtonView.OnToggleChangeListener() {
+                @Override
+                public void onChange(boolean isToggleOn) {
+                    ...
+                }
+            });
+            //代码设置状态
+            myswitchbutton.setIsToggleOn(false);
+        }
+    }
+    
+    都是自定义控件那点事，没得多说的。
+    更多资料请关注[我的博客](http://blog.csdn.net/fesdgasdgasdg?viewmode=contents)
