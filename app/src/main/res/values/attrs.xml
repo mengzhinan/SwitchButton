@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="SwitchButtonView">
+        <!--圆角矩形与内圆的间距-->
+        <attr name="innerPaddingWidth" format="dimension|reference" />
+        <!--底纹颜色-->
+        <attr name="bgColor1" format="color|reference" />
+        <!--填充颜色-->
+        <attr name="bgColor2" format="color|reference" />
+        <!--边框粗细-->
+        <attr name="bgWidth" format="dimension|reference" />
+        <!--选中颜色-->
+        <attr name="coverColor" format="color|reference" />
+        <!--圆默认颜色-->
+        <attr name="circleDefaultColor" format="color|reference" />
+        <!--圆按下颜色-->
+        <attr name="circleSelectColor" format="color|reference" />
+        <!--是否打开-->
+        <attr name="isToggleOn" format="boolean" />
+    </declare-styleable>
+</resources>
