@@ -68,10 +68,9 @@ a simple slide layout library,just one java class file! 自定义控件，一个
                     ...
                 }
             });
-            代码设置状态
-            myswitchbutton.setIsToggleOn(false);
+            myswitchbutton.setIsToggleOn(false);代码设置状态
         }
     }
     
-    都是自定义控件那点事，没得多说的。
+    都是自定义控件那点事，没得多说的。  
     更多资料请关注[我的博客](http://blog.csdn.net/fesdgasdgasdg?viewmode=contents)
