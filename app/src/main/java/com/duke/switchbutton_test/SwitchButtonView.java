@@ -82,9 +82,10 @@ public class SwitchButtonView extends View {
      * @param isToggleOn
      */
     public void setIsToggleOn(boolean isToggleOn) {
-        if (this.isToggleOn != isToggleOn) {
+        this.isToggleOn = isToggleOn;
+        /*if (this.isToggleOn != isToggleOn) {
             preAnimation();
-        }
+        }*/
     }
 
     /**
